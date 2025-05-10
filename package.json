@@ -1,28 +1,24 @@
 {
-  "name": "node-curl-impersonate",
-  "version": "1.5.4",
-  "description": "A wrapper around cURL-impersonate, a binary which can be used to bypass TLS fingerprinting.",
-  "main": "dist/index.js",
-  "type": "module",
-  "scripts": {
-    "build": "npx tsc"
-  },
-  "keywords": [
-    "web-scraping",
-    "tls-fingerprinting",
-    "curl-impersonate",
-    "typescript"
-  ],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^22.9.0",
-    "typescript": "^5.6.3"
-  },
-  "dependencies": {
-    "ts-node": "^10.9.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.6.3"
-  }
+    "name": "node-curl-impersonate",
+    "version": "1.5.5",
+    "description": "A wrapper around cURL-impersonate, a binary which can be used to bypass TLS fingerprinting.",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "build": "tsc",
+        "test": "jest"
+    },
+    "keywords": [
+        "web-scraping",
+        "tls-fingerprinting",
+        "curl-impersonate",
+        "typescript"
+    ],
+    "author": "https://github.com/wearrrrr",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.9.0",
+        "typescript": "^5.8.3"
+    }
 }
