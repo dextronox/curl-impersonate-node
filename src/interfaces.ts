@@ -9,6 +9,7 @@ interface CurlImpersonateOptions {
     followRedirects?: boolean | true;
     verbose?: boolean | false;
     impersonate?: validBrowsers[number];
+    proxy?: string;
 }
 
 interface CurlResponse {
